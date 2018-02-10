@@ -1,1 +1,380 @@
-Hello Bees
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title> Linguabee &middot; Book a sign language interpreter </title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
+    <link href="assets/css/toolkit-startup.css" rel="stylesheet">
+    <link href="assets/css/application-startup.css" rel="stylesheet">
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+        #stage {
+          height: 1px;
+          overflow: auto;
+          min-height: 100vh;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+    </style>
+
+    <script>
+      window.intercomSettings = {
+        app_id: "bb88582dad1e7a60ed4527db853173fa4b7be0a9"
+      };
+    </script>
+    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/bb88582dad1e7a60ed4527db853173fa4b7be0a9';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+    <link rel="icon" href="assets/img/linguabee/icons/cropped-linguabee-icon-wp-32x32.png" sizes="32x32" />
+    <link rel="icon" href="assets/img/linguabee/icons/cropped-linguabee-icon-wp-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="assets/img/linguabee/icons/cropped-linguabee-icon-wp-180x180.png" />
+    <meta name="msapplication-TileImage" content="assets/img/linguabee/icons/cropped-linguabee-icon-wp-270x270.png" />
+
+  </head>
+
+  <body>
+
+    <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
+      <ul class="nav nav-bordered nav-stacked flex-column">
+        <li class="nav-header">Examples</li>
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Startup</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="minimal/index.html">Minimal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bold/index.html">Bold</a>
+        </li>
+        <li class="nav-divider"></li>
+        <li class="nav-header">Docs</li>
+        <li class="nav-item">
+          <a class="nav-link" href="docs/index.html">Toolkit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://getbootstrap.com">Bootstrap</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="stage" id="stage">
+
+    <div class="block block-inverse block-fill-height app-header"
+         style="background-image: url(assets/img/linguabee/startup-1.jpg);">
+
+      <div class="container py-4 fixed-top app-navbar">
+      <nav class="navbar navbar-transparent navbar-padded navbar-expand-md">
+        <a class="navbar-brand mr-auto" href="">
+          <img src="assets/img/linguabee/linguabee-white-yellow.svg" width="200" style:"width:100px;">
+          <!-- <strong style="background: #fff; padding: 12px; border-radius: 4px; color: #28669F;">linguabee</strong> -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-target="#stage"
+          data-toggle="stage"
+          data-distance="-250">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="d-none d-md-block text-uppercase">
+          <ul class="navbar-nav">
+            <li class="nav-item px-1 ">
+              <p class="navbar-text text-muted">855-585-5859</p>
+            </li>
+            <li class="nav-item px-1 ">
+              <p class="navbar-text text-muted">&nbsp;&nbsp;&bullet;</p>
+            </li>
+            <li class="nav-item px-1 ">
+              <a class="nav-link" href="https://app.linguabee.com/users/new">Sign Up</a>
+            </li>
+            <li class="nav-item px-1 ">
+              <a class="nav-link" href="https://app.linguabee.com">Log In</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+      <!--<img class="app-graph"  src="assets/img/startup-0.svg">-->
+
+      <div class="block-xs-middle pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 col-lg-6">
+              <h1 class="block-titleData frequency">Sign language interpreting is complex.</h1>
+              <p class="lead mb-4 text-muted">Booking an interpreter doesn't have to be.</p>
+              <button class="btn btn-warning btn-lg">Book now</button>
+              <br>
+              <br>
+              <p class="small mb-4 text-muted">Not convinced? Read on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block block-secondary app-iphone-block">
+      <div class="container">
+        <div class="row app-align-center">
+
+          <div class="col-sm-5 ml-auto mb-5">
+            <img src="assets/img/linguabee/ShakeHands.svg" style="width: 70%;">
+          </div>
+
+          <div class="col-md-6 col-sm-12 ml-auto">
+            <h6 class="text-muted text-uppercase">LINGUABEE</h6>
+            <h2>
+              We get it.
+            </h2>
+            <p class="lead mb-4">
+              You want to book an interpreter without all the confusing insider jargon.
+              You want to know that your request is a priority, even if it only for an hour.
+              You’re exhausted by the endless back and forth “required” to book an interpreter.
+              You just want to book a interpreter when it’s convenient for you - even if it’s after hours.
+              You want input on who interprets for your requests.
+            </p>
+            <p class="lead mb-4">
+              Better yet, you want to read reviews on interpreters before you select them.
+            </p>
+            <p class="lead pb-5">
+              <strong>You deserve this and more.</strong>
+              <br>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="block block-inverse app-high-praise"
+         style="background-image: url(assets/img/startup-3.jpg);">
+        <div class="container">
+          <div class="row app-align-center py-3 justify-content-end">
+            <div class="col-sm-7 col-md-5 py-5">
+              <h6 class="text-muted text-uppercase mb-2">High Praise</h6>
+              <h2 class="mb-4">
+                “Linguabee has put the power of choosing who our interpreters are
+                back in our hands. I no longer have to deal with ‘surprise dates’
+                from traditional agencies nor suffer from accessibility anxiety!”
+              </h2>
+              <p class="mb-4 text-muted">Bekah, a Deaf consumer</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- <div class="block app-ribbon py-5">
+      <div class="container text-xs-center">
+        <img src="assets/img/startup-4.svg">
+        <img src="assets/img/startup-5.svg">
+        <img src="assets/img/startup-6.svg">
+        <img src="assets/img/startup-7.svg">
+        <img src="assets/img/startup-8.svg">
+      </div>
+    </div> -->
+
+    <div class="block block-secondary app-block-marketing-grid">
+      <div class="container text-xs-center">
+
+        <div class="row mb-5 justify-content-center">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <h6 class="text-muted text-uppercase mb-2">What we know</h6>
+            <h4 class="mb-4 text-muted">
+              It’s the company that you find super helpful that will earn your business.
+            </h4>
+            <h2 class="mb-4">
+              A few things to give you sense of how we can help.
+            </h2>
+          </div>
+        </div>
+
+        <div class="row app-marketing-grid">
+
+          <div class="col-md-6 px-4 mb-5">
+            <img class="mb-3" src="assets/img/linguabee/NotSure.svg" style="height:150px;">
+            <p><strong>It can be confusing</strong></p>
+            <p>
+              It is very common for a person requesting services for the first time to feel
+              overwhelmed and confused. It happens to the best of people.
+            </p>
+            <p class="text-muted">
+              The Linguabee booking process is an informative, transparent, and jargon free
+              experience that guides you through the process of booking an interpreter. In
+              addition to saving you time, this process empowers you to select the interpreter
+              that is best suited to your circumstance.
+            </p>
+          </div>
+
+          <div class="col-md-6 px-4 mb-5">
+            <img class="mb-3" src="assets/img/linguabee/PiggyBank.svg" style="height:150px;">
+            <p><strong>The truth about interpreter availability</strong></p>
+            <p>
+              98.2% of sign language interpreting agencies prioritize the availability of
+              their interpreters according to the length and profitability of your request.
+            </p>
+            <p class="text-muted">
+              With Linguabee, you broadcast your request and see interpreters bid to work
+              with you in realtime. You select them, chat with them about their experience.
+              We stay out of the way.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="row app-marketing-grid">
+
+          <div class="col-md-6 px-4 mb-5">
+            <img class="mb-3" src="assets/img/linguabee/Choose.svg" style="height:150px;">
+            <p><strong>Want more input on interpreter selection?</strong></p>
+            <p>
+              It is most common for interpreting agencies to make the decision on which
+              interpreter will come to your location.
+            </p>
+            <p class="text-muted">
+              With Linguabee, you are in charge.
+              <br>
+              &bullet; You broadcast your requests
+              <br>
+              &bullet; Interpreters bid to work with you
+              <br>
+              &bullet; You see who is available in real-time
+              <br>
+              &bullet; You select the one that is the best fit
+            </p>
+          </div>
+
+          <div class="col-md-6 px-4 mb-5">
+            <img class="mb-3" src="assets/img/linguabee/Puzzled.svg" style="height:150px;">
+            <p><strong>Surprised by the cost of an interpreter?</strong></p>
+            <p>
+              It is very common for a person requesting services for the first time
+              to feel surprised by the cost and service terms required to book sign
+              language interpreting services.
+            </p>
+            <p class="text-muted">
+              Linguabee is confident that it offers a reasonable rate for services
+              and provides a comparison calculator of local competitors to give you
+              the proof.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="block app-price-plans">
+      <div class="container text-center">
+
+        <div class="row mb-5 justify-content-center">
+          <div class="col-10 col-md-8 col-lg-6">
+            <h6 class="text-muted text-uppercase mb-2">Let's Chat</h6>
+            <h2>We are at the ready to work with you.</h2>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-4 px-4 pb-2 mb-5">
+            <div class="px-2 mb-2">
+              <h6 class="text-muted text-uppercase mb-4">Phone or Text</h6>
+              <h4><a href="tel:1-855-585-5859">855-585-5859</a></h4>
+              <p class="pb-2 mt-4">(including fax and videophone)</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 px-4 pb-2 mb-5">
+            <div class="px-2 mb-2">
+              <h6 class="text-muted text-uppercase mb-4">Email Support</h6>
+              <h4><a href="mailto:support@linguabee.com">support@linguabee.com</a></h4>
+              <p class="pb-2 mt-4">(we respond very fast during business hours)</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 px-4 pb-2 mb-5">
+            <div class="px-2 mb-2">
+              <h6 class="text-muted text-uppercase mb-4">Online Support</h6>
+              <h4><a onclick="Intercom('show');" class="text-primary" style="cursor:pointer;">Live Chat</a></h4>
+              <p class="pb-2 mt-4">(Mon-Fri, 7am to 7pm)</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="block block-inverse app-footer">
+     <div class="container">
+        <div class="row">
+          <div class="col-md-5 mb-5">
+            <ul class="list-unstyled list-spaced">
+              <li class="mb-2"><h6 class="text-uppercase">About</h6></li>
+              <li class="text-muted">
+                We build our own interpreting platform and are super proud
+                of what we created. If you'd like to learn more, or are interested
+                in a job, contact us anytime at <a href="mailto:support@linguabee.com">support@linguabee.com</a>.
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 ml-auto mb-5">
+            <!--
+            <ul class="list-unstyled list-spaced">
+              <li class="mb-2"><h6 class="text-uppercase">Product</h6></li>
+              <li class="text-muted">Features</li>
+              <li class="text-muted">Examples</li>
+              <li class="text-muted">Tour</li>
+              <li class="text-muted">Gallery</li>
+            </ul>
+            -->
+          </div>
+          <div class="col-md-2 mb-5">
+            <!--
+            <ul class="list-unstyled list-spaced">
+              <li class="mb-2"><h6 class="text-uppercase">Apis</h6></li>
+              <li class="text-muted">Rich data</li>
+              <li class="text-muted">Simple data</li>
+              <li class="text-muted">Real time</li>
+              <li class="text-muted">Social</li>
+            </ul>
+            -->
+          </div>
+          <div class="col-md-2 mb-5">
+            <ul class="list-unstyled list-spaced">
+              <li class="mb-2"><h6 class="text-uppercase">Legal</h6></li>
+              <li class="text-muted"><a href="legal.html">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+    </script>
+
+  </body>
+</html>
